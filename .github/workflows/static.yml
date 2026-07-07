@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build project
-        run: npm run generate  # 你的构建命令，也可能是 npm run generate 等
+        run: npm run build # 你的构建命令，也可能是 npm run generate 等
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
