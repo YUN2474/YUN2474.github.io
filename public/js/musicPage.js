@@ -7,7 +7,7 @@ window['music'] = function init(params)
 {
     // 获得网页数据
 
-    console.log('params:', params);
+    console.log('paramsA:', params);
 
     
     const albumID = params.get('currentAlbumID') || "CuCao";
