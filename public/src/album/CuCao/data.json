@@ -1,0 +1,10 @@
+{
+    "name": "粗糙",
+    "artist": "影月炎YUN",
+    "date": "2026-03-16",
+    "describes": "<p>我尝试通过有意降低音质来做出一种包裹感，也是对“微光闪烁”这首音乐风格的扩展探索</p>",
+    "release-platform": ["https://music.163.com/#/song?id=3359689852", "https://soundcloud.com/y-un-yun/w0wwi4ag6uyd", "https://yingyueyan.bandcamp.com/track/-"],
+    "tracks": [
+        {"audio": "CuCao.mp3", "track-name": "粗糙", "track-artist": "影月炎YUN", "track-duration": "4:20", "MV": null}
+    ]
+}

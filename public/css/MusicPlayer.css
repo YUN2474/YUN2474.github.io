@@ -1,0 +1,50 @@
+#PlaySong {
+    display: flex; 
+    color: rgb(187, 187, 187);
+    font-size: 20px;     
+    justify-content: space-between;
+    align-items: left;  
+}
+
+.play-btn {
+    display: block;
+    float:inline-start;
+    width: 100px;
+    height: 100px;
+    padding: 0px 0px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+
+    background:none
+}
+
+.play-btn img {
+    display: block;
+    float:inline-start;
+    width: 90px;
+    height: 90px;
+    color: rgb(187, 187, 187);  
+    transform:translate(-10px, 0%);
+}
+
+.progress-section {
+    display: block;
+    text-align: center;
+    align-content: center;
+}
+
+#currentTimeDisplay {
+    color: rgb(187, 187, 187);  
+    justify-content: space-between;
+}
+
+#durationDisplay {
+    margin-left: 60%;
+    color: rgb(187, 187, 187);  
+    justify-content: space-between;
+}
+
+#progressSlider {
+    width: 100%;
+}

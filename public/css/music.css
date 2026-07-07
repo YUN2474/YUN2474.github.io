@@ -1,0 +1,163 @@
+/* 音轨 */
+#tracks a{
+    margin: 3px 3px;
+}
+
+#track-name {
+    flex: 1;                /* 占据多余空间，把时长挤到右侧 */
+    white-space: nowrap;    /* 防止歌名换行 */
+    overflow: hidden;
+    text-overflow: ellipsis; /* 太长显示省略号 */
+}
+
+#track-duration{
+    white-space: nowrap;
+}
+
+#track-artist{
+    color: rgb(187, 187, 187);
+    font-size: 15px;
+}
+
+/* 音轨界面设置 */
+#album-release-platform {
+    color: rgb(187, 187, 187);
+    font-size: 20px;
+    width: 100%;
+    height: 100px;
+}
+
+#album-release-platform a {
+    padding: 5px 5px;
+}
+
+#album-release-platform a img {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#album-cover {
+    display: flex;
+    left: 50%;
+}
+
+.album-bg {
+    user-select:auto;
+}
+
+.album-name {
+    display: flex;
+    font-size: 120%;
+    font-weight: 500;
+    justify-content: center;  
+    align-items: center;   
+}
+
+.album-artist {
+    display: flex;
+    font-size: 80%;
+    color: rgb(187, 187, 187);
+    justify-content: center;  
+    align-items: center;   
+}
+.album-date {
+    display: flex;
+    font-size: 15px;
+    color: rgb(187, 187, 187);
+}
+
+.TracksColumn {
+    position: fixed;
+    right: 3%;
+    height: 70%;
+    width: 30%;
+    bottom: 10%;
+
+    background: #3f3f3f8e;
+    backdrop-filter: blur(50px);
+
+    padding:5px 20px;
+
+    overflow-y: auto;
+    overflow-x: visible;
+
+    border: 2px solid rgba(255, 255, 255, 0.137);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.TracksColumn img{
+    display: flex;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.TracksColumn a{
+    display: flex;      
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.TracksColumn span{
+    display: flex;      
+
+}
+
+#describes-button {
+    float: right;
+    font-size: 20px;
+}
+
+/* 专辑界面 */
+.AlbumColumn {
+    position: fixed;
+    left: 3%;
+
+    height: 85%;
+    overflow-y: auto;
+
+    background: #3f3f3f8e;
+    backdrop-filter: blur(50px);
+
+    width: 56%;
+    padding:5px 50px;
+    
+    border: 2px solid rgba(255, 255, 255, 0.137);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.AlbumColumn a {
+    height: 280px;
+    margin:5px 5px;
+    transform: All 0.1s;
+}
+
+.MusicPlayer {
+    position: fixed;
+    right: 3%;
+    bottom: 9%;
+
+    background: #3f3f3f8e;
+    backdrop-filter: blur(50px);
+
+    padding:10px 25px;
+    width: 30%;
+
+
+    border: 2px solid rgba(255, 255, 255, 0.137);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.musicPage {
+    position: fixed;
+
+    left: 42%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+
+    background: #3f3f3f8e;
+    backdrop-filter: blur(50px);
+
+    height: 100%;
+    width: 75%;
+}

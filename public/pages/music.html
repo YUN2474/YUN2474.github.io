@@ -1,0 +1,95 @@
+<!- 音乐界面 ->
+<div class="music">
+    <link rel="stylesheet" href="css/music.css">
+    <div class="musicPage">
+    <!- 专辑界面 ->
+
+    <div class="AlbumColumn" style="bottom: 20%; top: 5%;">
+        
+        <div id="albums"><dl>
+            <dt><a data-album="CuCao">
+                <span class="album-date" id="albumColumn-album-date">2026-03-16</span>
+                <img src="src/album/CuCao/cover.png" alt="cover" id="albumColumn-album-cover" width="150" height="150">
+                <span class="album-name" id="albumColumn-album-name">TEST</span>
+                <span class="album-artist" id="albumColumn-album-artist">the test</span>
+            </a></dt>
+        </dl></div>
+    </div>
+    
+    <!- 音轨界面 ->
+    <div class="TracksColumn" style="bottom: 25%;">
+
+        <button class="describes-button" id="describes-button"><span>|专辑介绍|</span></button>
+        <span class="album-date" id="album-date"> 2026-03-16 </span>
+
+        <div id="track-interface">
+            <img src="src/album/CuCao/cover.png" alt="cover" id="album-cover" width="400" height="400">
+
+            <!- 专辑信息 ->
+            <span class="album-name" id="album-name">粗糙</span>
+            <span class="album-artist" id="album-artist">影月炎YUN</span>
+
+            <div id="album-release-platform">
+                <span>发布平台</span>
+                <a><img src="src/album/CuCao/cover.png" width="50" height="50"></a>
+            </div>
+        
+            <div id="tracks"><dl>
+                <span>播放列表</span>
+                <dt>
+                    <a style='width: 95%'>
+                        <span id="track-name">
+                            <span>1.</span>
+                            I love test
+                            <span id="track-artist">影月炎YUN</span>
+                        </span>
+                        <span id="track-duration">69:69</span>
+                    </a>
+                </dt>
+
+                <dt>
+                    <a style='width: 95%'>
+                        <span id="track-name">
+                            <span>2.</span>
+                            I love 影月炎YUN
+                            <span id="track-artist">影月炎YUN</span>
+                        </span>
+                        <span id="track-duration">69:69</span>
+                    </a>
+                </dt>
+            </dl></div>
+        </div>
+
+        <div id = "describes-interface">
+            <p>test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test-test</p>
+        </div>
+    </div>
+    
+    <div class="MusicPlayer">
+        <link rel="stylesheet" href="css/MusicPlayer.css">
+
+        <span id="playSongName"> 当前播放: </span>
+
+        <button class="play-btn" id="playPauseBtn" aria-label="播放/暂停">
+            <img src="src/img/Theme/1/UI/pause-icon.png" class="play-icon" id="playIcon" width="100px" height="100px"></img>
+        </button>
+
+        <div class="progress-section">
+            <div class="time-row">
+                <span id="currentTimeDisplay">00:00</span>
+                <span id="durationDisplay">99:99</span>
+            </div>
+            <div class="slider-container">
+                <input type="range" id="progressSlider" value="0" min="0" max="100" step="0.01" disabled>
+            </div>
+        </div>
+
+        <span style="font-size:20px;">音量:</span>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.7">
+        <span id="volumeDisplay" style="font-size:18px;">70%</span>
+
+    </div>
+    </div>
+    <script src="js/musicPage.js"></script>
+    
+</div>
