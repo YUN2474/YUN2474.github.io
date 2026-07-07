@@ -84,7 +84,7 @@ navLinks.forEach(link => {
 
 function getRouteFromHash() {
     const hash = window.location.hash.slice(1); // 去掉 #
-    return hash.split('?')[0] || 'index'; // 默认首页
+    return hash.split('?')[0] || 'home'; // 默认首页
 }
 
 // 初始化
